@@ -1,0 +1,13 @@
+Imagine you are a software engineer tasked with optimizing this piece of software for performance:
+
+[Insert code block]
+
+Use the following chain of thought to guide your approach:
+
+Performance profiling: Start with how you would profile the software to identify current performance bottlenecks.
+
+Optimization techniques: Discuss the specific techniques you would consider to address the identified bottlenecks, such as algorithm optimization, code refactoring, or hardware acceleration.
+
+Testing and validation: Describe your method for testing the optimized software to ensure that the changes have had the desired effect and have not introduced new issues.
+
+Implementation strategy: Finally, outline how you would safely implement the optimized code into the production environment, ensuring minimal disruption.

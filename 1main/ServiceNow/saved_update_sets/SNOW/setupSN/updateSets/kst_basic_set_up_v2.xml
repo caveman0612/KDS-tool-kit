@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-11 21:54:15">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>kst_basic_set_up_v2</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>827150c183a90210e3d21ed6feaad357</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 21:54:14</sys_created_on>
+<sys_id>c9f1180583a90210e3d21ed6feaad367</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 21:54:14</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_432ace8b0a0a0b34006b02832660c894</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_update_and_stay&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Saves an existing record and redirects back to current screen (button version, advanced mode)&lt;/comments&gt;&lt;condition&gt; isAdvancedUI() &amp;amp;&amp;amp; current.canWrite()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Save record and remain here&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Save&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;-150&lt;/order&gt;&lt;script&gt;&lt;![CDATA[action.setRedirectURL(current);
+current.update();]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glide.maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2008-02-22 22:02:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;432ace8b0a0a0b34006b02832660c894&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;Save&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="System (glidesoft)" source="glidesoft"&gt;80cacc20d9313110cedf7dffddb48f27&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_432ace8b0a0a0b34006b02832660c894&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-03 19:19:52&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-775673895</payload_hash>
+<remote_update_set display_value="kst_basic_set_up_v2">c9f1180583a90210e3d21ed6feaad367</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 21:54:14</sys_created_on>
+<sys_id>0df1180583a90210e3d21ed6feaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ecf2586d50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 21:54:14</sys_updated_on>
+<table>global</table>
+<target_name>Save</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>bde1eadaa1d5021078a364b23e4038bb</update_guid>
+<update_guid_history>bde1eadaa1d5021078a364b23e4038bb:-775673895,d3b1eadaafd502102e27c54d935c41dc:224265457,ef26f05d9c01021090b9ce0b43ed92ed:-775673895,8b163c1d9b010210088dd453b2c566de:224265457,b406781d030102103b52a7862e70dee3:-775673895,bc06781d8c010210852ec5370ad5c9e1:149889791,1a0b34f97e110210cc0fb01cdfc7c0af:149889791</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_42e780d40a0a0b34007e0d4a52d33405</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_insert_and_stay&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Saves a new record and redirects back to self (button version, advanced mode)&lt;/comments&gt;&lt;condition&gt;isAdvancedUI() &amp;amp;&amp;amp; current.canCreate()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Save record and remain here&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Save&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;-100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[action.setRedirectURL(current);
+current.insert();
+gs.include('ActionUtils');
+var au = new ActionUtils();
+au.postInsert(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;false&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glide.maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2008-02-22 20:49:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;42e780d40a0a0b34007e0d4a52d33405&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;Save&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="System (glidesoft)" source="glidesoft"&gt;80cacc20d9313110cedf7dffddb48f27&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_42e780d40a0a0b34007e0d4a52d33405&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-03 19:39:35&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1323800671</payload_hash>
+<remote_update_set display_value="kst_basic_set_up_v2">c9f1180583a90210e3d21ed6feaad367</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 21:54:14</sys_created_on>
+<sys_id>49f1180583a90210e3d21ed6feaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ecf2586e00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 21:54:14</sys_updated_on>
+<table>global</table>
+<target_name>Save</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>22662e1676190210e97220275bac58dc</update_guid>
+<update_guid_history>22662e1676190210e97220275bac58dc:-1323800671,66662e1692190210e53be449d7a80ada:-1929455072</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_0aa21712bf3021000ba9dc2ecf073995</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_insert_and_stay&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Saves a new record and redirects back to self (button version, advanced mode)&lt;/comments&gt;&lt;condition&gt;isAdvancedUI() &amp;amp;&amp;amp; current.canCreate()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Save record and remain here&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Save&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;-100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[action.setRedirectURL(current);
+current.insert();
+gs.include('ActionUtils');
+var au = new ActionUtils();
+au.postInsert(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;false&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-05-22 23:00:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;0aa21712bf3021000ba9dc2ecf073995&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Save&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Glide Metadata" source="com.glide.metadata"&gt;f86bc4a4d9313110cedf7dffddb48fd3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_0aa21712bf3021000ba9dc2ecf073995&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-03 19:20:09&lt;/sys_updated_on&gt;&lt;table&gt;sys_metadata&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1890301409</payload_hash>
+<remote_update_set display_value="kst_basic_set_up_v2">c9f1180583a90210e3d21ed6feaad367</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 21:54:14</sys_created_on>
+<sys_id>81f1180583a90210e3d21ed6feaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ecf2586db0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 21:54:14</sys_updated_on>
+<table>sys_metadata</table>
+<target_name>Save</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>fdf1a61e6bd50210057b04436020323a</update_guid>
+<update_guid_history>fdf1a61e6bd50210057b04436020323a:-1890301409,b5f1a61e1ad502106e97482779c4b039:726966622</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_44821712bf3021000ba9dc2ecf073973</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_update_and_stay&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Saves an existing record and redirects back to current screen (button version, advanced mode)&lt;/comments&gt;&lt;condition&gt; isAdvancedUI() &amp;amp;&amp;amp; current.canWrite()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Save record and remain here&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Save&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;-150&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var returnUrl = current;
+if(current.getTableName() == "sys_metadata")
+	returnUrl = "sys_metadata.do?sysparm_ignore_class=true&amp;sys_id=" + current.sys_id.toString();
+action.setReturnURL(returnUrl);
+current.update();
+if (!current.isActionAborted())
+	action.setRedirectURL(returnUrl);]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-05-22 23:00:03&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;44821712bf3021000ba9dc2ecf073973&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Save&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Glide Metadata" source="com.glide.metadata"&gt;f86bc4a4d9313110cedf7dffddb48fd3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_44821712bf3021000ba9dc2ecf073973&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-03-18 22:38:08&lt;/sys_updated_on&gt;&lt;table&gt;sys_metadata&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-784849760</payload_hash>
+<remote_update_set display_value="kst_basic_set_up_v2">c9f1180583a90210e3d21ed6feaad367</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 21:54:14</sys_created_on>
+<sys_id>cdf1180583a90210e3d21ed6feaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ecf2586bf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 21:54:14</sys_updated_on>
+<table>sys_metadata</table>
+<target_name>Save</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>92d5381d850102100c92f6c090a88552</update_guid>
+<update_guid_history>92d5381d850102100c92f6c090a88552:-784849760,16d5381d8e010210de565533a8e50f50:1275240250</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-02-28 15:20:15">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>KRS-Global-STRY0010767-pto</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>de563ca91bdc02d4ee1a8775cc4bcb28</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>266bd50b1b20c2d0b48764e6ec4bcbfc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_c5eae814875c8610076fcb77cebb359f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/ntin/push_pto</base_uri><consumes>application/json</consumes><consumes_customized>true</consumes_customized><default_version>v1</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>true</is_versioned><name>Push PTO</name><namespace>ntin</namespace><produces>application/json</produces><produces_customized>true</produces_customized><service_id>push_pto</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-07 12:30:33</sys_created_on><sys_id>c5eae814875c8610076fcb77cebb359f</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Push PTO</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_c5eae814875c8610076fcb77cebb359f</sys_update_name><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-07 12:31:37</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>2048407218</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>226bd50b1b20c2d0b48764e6ec4bcbfe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b909f90000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>Push PTO</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>3f6be0545b5c86107455716af464de1b</update_guid>
+<update_guid_history>3f6be0545b5c86107455716af464de1b:2048407218,aa4b2054bf5c861059dde9ce88b539a9:-588470442,4c3b2054225c861007fc4427f65af458:-1019478336</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_atf_step_ed88b34487188610076fcb77cebb35bc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="DELETE"><active>true</active><copied_from/><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-07 08:49:24</sys_created_on><sys_id>ed88b34487188610076fcb77cebb35bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_atf_step_ed88b34487188610076fcb77cebb35bc</sys_update_name><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-07 08:49:24</sys_updated_on><table/><test display_value="PTOHandler">4c7207e387048210076fcb77cebb3520</test><timeout>1970-01-01 00:00:00</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=ed88b34487188610076fcb77cebb35bc"/></record_update>]]></payload>
+<payload_hash>-671872615</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>266bd50b1b20c2d0b48764e6ec4bcbfd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b909e00000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>Run Server Side Script</target_name>
+<type>Test Step</type>
+<update_domain>global</update_domain>
+<update_guid>e29977847d18861081c683943391b01f</update_guid>
+<update_guid_history>e29977847d18861081c683943391b01f:-671872615,ec98774c0ad48610c8f26ea523594a4f:1441454101</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_atf_step_b6c38fe387048210076fcb77cebb35a0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes/><order>1</order><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-05 15:51:04</sys_created_on><sys_id>b6c38fe387048210076fcb77cebb35a0</sys_id><sys_mod_count>77</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_atf_step_b6c38fe387048210076fcb77cebb35a0</sys_update_name><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-09 06:09:23</sys_updated_on><table/><test display_value="PTOHandler">4c7207e387048210076fcb77cebb3520</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=b6c38fe387048210076fcb77cebb35a0"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>b6c38fe387048210076fcb77cebb35a0</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-05 15:51:04</sys_created_on><sys_id>39e50fa787048210076fcb77cebb3528</sys_id><sys_mod_count>77</sys_mod_count><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-09 06:09:23</sys_updated_on><value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+    describe('PTOHandler', function () {&#13;
+        var handler = null;&#13;
+        var resultMessage = null;&#13;
+        var test_user_sys_id = null;&#13;
+        var test_user_two_sys_id = null;&#13;
+        var test_user_three_sys_id = null;&#13;
+        var basic_pto_object = null;&#13;
+        var basic_time_off_entry = null;&#13;
+        var parse_and_process_test_data = null;&#13;
+        var parse_and_process_test_data_initial_load = null;&#13;
+&#13;
+        function assertResourcePlan(ex_values, resource_plan_gr) {&#13;
+            expect(resource_plan_gr.getValue('resource_type')).toBe('user');&#13;
+            expect(resource_plan_gr.getValue('user_resource')).toBe(ex_values['user_resource']);&#13;
+            expect(resource_plan_gr.getValue('request_type')).toBe('hours');&#13;
+            expect(resource_plan_gr.getValue('planned_hours')).toBe(ex_values['planned_hours']);&#13;
+            expect(resource_plan_gr.getValue('short_description')).toBe(handler.info_resource_plan_short_desc);&#13;
+            expect(resource_plan_gr.getValue('distribution')).toBe('plan_duration');&#13;
+            expect(resource_plan_gr.getValue('distribution_type')).toBe('even');&#13;
+            expect(resource_plan_gr.getValue('operational_work_type')).toBe('oof_time_off');&#13;
+            expect(resource_plan_gr.getValue('plan_type')).toBe('operational_work');&#13;
+            expect(resource_plan_gr.getValue('state')).toBe('2');&#13;
+            expect(resource_plan_gr.getValue('start_date')).toBe(ex_values['date']);&#13;
+            expect(resource_plan_gr.getValue('end_date')).toBe(ex_values['date']);&#13;
+        }&#13;
+&#13;
+        function assertTimeCard(ex_values, time_card_gr) {&#13;
+            expect(time_card_gr.getValue('category')).toBe('oof_time_off');&#13;
+            expect(time_card_gr.getValue('comments')).toBe(PTOHandler.timeCardComment);&#13;
+            expect(time_card_gr.getValue('resource_plan')).toBe(ex_values['resource_plan']);&#13;
+            expect(time_card_gr.getValue('user')).toBe(ex_values['user']);&#13;
+            expect(time_card_gr.getValue('state')).toBe('Approved');&#13;
+            expect(time_card_gr.getValue(ex_values['day_of_week'])).toBe(ex_values['planned_hours']);&#13;
+        }&#13;
+&#13;
+        function getRecentWorkDay(user_sys_id) {&#13;
+            start_of_week = handler.getStartOfWeekForUser(user_sys_id);&#13;
+            gdt = new GlideDateTime(start_of_week.getValue());&#13;
+            gdt.addDaysUTC(2);&#13;
+            return gdt.getDate().getValue();&#13;
+        }&#13;
+&#13;
+        function assertTimeCardCount(ex_count, resource_plan_sys_id) {&#13;
+            var tc = new GlideRecord('time_card');&#13;
+            tc.addQuery('resource_plan', resource_plan_sys_id);&#13;
+            tc.addQuery('category', 'oof_time_off');&#13;
+            tc.addQuery('comments', PTOHandler.timeCardComment);&#13;
+&#13;
+            tc.query();&#13;
+            expect(tc.getRowCount()).toBe(ex_count);&#13;
+        }&#13;
+&#13;
+        beforeEach(function () {&#13;
+            resultMessage = new ResultUtil();&#13;
+            handler = new PTOHandler(resultMessage);&#13;
+            test_user_sys_id = '09a1edcbdbbf3010c7ae7c923996195e'; // HANNAMAN, RONDA&#13;
+            test_user_two_sys_id = '70a1edcbdbbf3010c7ae7c923996191e'; // kyle scharnhorst&#13;
+            test_user_three_sys_id = 'b0a1adcbdbbf3010c7ae7c92399619d4'; // jon vantrease&#13;
+            basic_pto_object = {&#13;
+                "date": "2023-11-01",&#13;
+                "employee": "HANNAMAN, RONDA",&#13;
+                "employee_code": "0027",&#13;
+                "time_off_entry_dict": {&#13;
+                    "13:00:00|YEB - Year End PTO": {&#13;
+                        "added": true,&#13;
+                        "approved": true,&#13;
+                        "deleted": false,&#13;
+                        "denied": true,&#13;
+                        "duration": 2.5,&#13;
+                        "last_request_type": "Time-Off Request Approved",&#13;
+                        "modified": false,&#13;
+                        "pay_type": "YEB - Year End PTO",&#13;
+                        "previous_duration": null,&#13;
+                        "previous_pay_type": "",&#13;
+                        "previous_start_time": "",&#13;
+                        "request_texts": [&#13;
+                            "Time-Off Request Added through Employee PTO Calendar for YEB - Year End PTO",&#13;
+                            "Time-Off Request Denied through Email for YEB - Year End PTO",&#13;
+                            "Time-Off Request Approved through Batch Approve Page for YEB - Year End PTO"&#13;
+                        ],&#13;
+                        "time": "13:00:00",&#13;
+                        "unapproved": false,&#13;
+                        "was_approved": true&#13;
+                    }&#13;
+                }&#13;
+            };&#13;
+&#13;
+            parse_and_process_test_data = {&#13;
+                "time_off_dict": {&#13;
+                    "0003|2024-01-31": {&#13;
+                        "date": "2024-01-31",&#13;
+                        "employee": "SHELBY, JON",&#13;
+                        "employee_code": "0003",&#13;
+                        "time_off_entry_dict": {&#13;
+                            "07:00:00|PTO - Paid Time Off": {&#13;
+                                "added": true,&#13;
+                                "approved": true,&#13;
+                                "deleted": false,&#13;
+                                "denied": false,&#13;
+                                "duration": 8.0,&#13;
+                                "last_request_type": "Time-Off Request Approved",&#13;
+                                "modified": false,&#13;
+                                "pay_type": "PTO - Paid Time Off",&#13;
+                                "previous_duration": null,&#13;
+                                "previous_pay_type": "",&#13;
+                                "previous_start_time": "",&#13;
+                                "request_texts": [&#13;
+                                    "Time-Off Request Added through Employee PTO Calendar for PTO - Paid Time Off",&#13;
+                                    "Time-Off Request Approved through Email for PTO - Paid Time Off"&#13;
+                                ],&#13;
+                                "time": "07:00:00",&#13;
+                                "unapproved": false,&#13;
+                                "was_approved": true&#13;
+                            }&#13;
+                        }&#13;
+                    },&#13;
+                    "0005|2024-02-02": {&#13;
+                        "date": "2024-02-02",&#13;
+                        "employee": "SHELBY, BRIAN",&#13;
+                        "employee_code": "0005",&#13;
+                        "time_off_entry_dict": {&#13;
+                            "07:00:00|PTO - Paid Time Off": {&#13;
+                                "added": true,&#13;
+                                "approved": true,&#13;
+                                "deleted": false,&#13;
+                                "denied": false,&#13;
+                                "duration": 8.0,&#13;
+                                "last_request_type": "Time-Off Request Approved",&#13;
+                                "modified": false,&#13;
+                                "pay_type": "PTO - Paid Time Off",&#13;
+                                "previous_duration": null,&#13;
+                                "previous_pay_type": "",&#13;
+                                "previous_start_time": "",&#13;
+                                "request_texts": [&#13;
+                                    "Time-Off Request Added through Employee PTO Calendar for PTO - Paid Time Off",&#13;
+                                    "Time-Off Request Approved through Batch Approve Page for PTO - Paid Time Off"&#13;
+                                ],&#13;
+                                "time": "07:00:00",&#13;
+                                "unapproved": false,&#13;
+                                "was_approved": true&#13;
+                            }&#13;
+                        }&#13;
+                    }&#13;
+                }&#13;
+            };&#13;
+&#13;
+            parse_and_process_test_data_initial_load = JSON.stringify(parse_and_process_test_data);&#13;
+&#13;
+            parse_and_process_test_data['time_off_dict']["0003|2024-01-31"]['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+            parse_and_process_test_data['time_off_dict']["0005|2024-02-02"]['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+&#13;
+            parse_and_process_test_data = JSON.stringify(parse_and_process_test_data);&#13;
+&#13;
+            basic_time_off_entry = basic_pto_object["time_off_entry_dict"]["13:00:00|YEB - Year End PTO"];&#13;
+&#13;
+            // clear created objects&#13;
+            handler.deleteAllRelevantResourcePlansForUser(test_user_sys_id);&#13;
+            handler.deleteAllRelevantResourcePlansForUser(test_user_two_sys_id);&#13;
+            handler.deleteAllRelevantResourcePlansForUser(test_user_three_sys_id);&#13;
+            handler.deleteAllRelevantResourcePlansForUser('04a12dcbdbbf3010c7ae7c92399619e3'); // jon shelby&#13;
+            handler.deleteAllRelevantResourcePlansForUser('89a1edcbdbbf3010c7ae7c9239961958'); // brian shelby&#13;
+        });&#13;
+&#13;
+        describe('parseAndProcessPTO', function () {&#13;
+            it('parses and processes pto...', function () {&#13;
+                result = handler.parseAndProcessPTO(parse_and_process_test_data);&#13;
+                expect(result.getSuccess()).toBe(true);&#13;
+                expect(result.getFieldValue('successfully_processed_count')).toBe(2);&#13;
+&#13;
+                result_obj = result.getResult();&#13;
+                gs.log(result.getResultJSON());&#13;
+                resource_plan_ids = [];&#13;
+                user_ids = [];&#13;
+&#13;
+                for (var i = 0; i &lt; result_obj.infoMessages.length; i++) {&#13;
+                    message = result_obj.infoMessages[i];&#13;
+&#13;
+                    if (message.startsWith('create_resource_plan')) {&#13;
+                        resource_plan_ids.push(message.split(':')[1]);&#13;
+                        for_user_message = result_obj.infoMessages[i+1];&#13;
+                        user_ids.push(for_user_message.split(':')[1]);&#13;
+                        i++;&#13;
+                    }&#13;
+                }&#13;
+&#13;
+                // ensures resource plans and associated time cards are created.&#13;
+                for (var x = 0; x &lt; resource_plan_ids.length; x++) {&#13;
+                    assertTimeCardCount(1, resource_plan_ids[x]);&#13;
+                }&#13;
+&#13;
+            });&#13;
+&#13;
+            it('does not care about date when initial load', function () {&#13;
+                result = handler.parseAndProcessPTO(parse_and_process_test_data_initial_load, true);&#13;
+                expect(result.getSuccess()).toBe(true);&#13;
+                expect(result.getFieldValue('successfully_processed_count')).toBe(2);&#13;
+&#13;
+                result_obj = result.getResult();&#13;
+                gs.log('initial load result: ' + result.getResultJSON());&#13;
+                resource_plan_ids = [];&#13;
+                user_ids = [];&#13;
+&#13;
+                for (var i = 0; i &lt; result_obj.infoMessages.length; i++) {&#13;
+                    message = result_obj.infoMessages[i];&#13;
+&#13;
+                    if (message.startsWith('create_resource_plan')) {&#13;
+                        resource_plan_ids.push(message.split(':')[1]);&#13;
+                        for_user_message = result_obj.infoMessages[i+1];&#13;
+                        user_ids.push(for_user_message.split(':')[1]);&#13;
+                        i++;&#13;
+                    }&#13;
+                }&#13;
+&#13;
+                // ensures resource plans and associated time cards are created.&#13;
+                for (var x = 0; x &lt; resource_plan_ids.length; x++) {&#13;
+                    var resource_plan_sys_id = resource_plan_ids[x];&#13;
+                    // check allocated&#13;
+                    var gr = new GlideRecord('resource_plan');&#13;
+                    gr.get(resource_plan_sys_id);&#13;
+                    expect(gr.getValue('state')).toBe('3');&#13;
+&#13;
+                    // check time cards&#13;
+                    assertTimeCardCount(1, resource_plan_sys_id);&#13;
+                }&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('PTOHandler.timeCardComment', function () {&#13;
+            it('is set', function () {&#13;
+                // a simple test&#13;
+    &#13;
+                var testAssertion = {&#13;
+                    name: 'is set',&#13;
+                    shouldbe: '*DO NOT CHANGE* - This was created via automation. - *DO NOT CHANGE*',&#13;
+                    value: PTOHandler.timeCardComment,&#13;
+                };&#13;
+                assertEqual(testAssertion);&#13;
+                &#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getStartOfWeekForUser', function () {&#13;
+            it('returns glide date for the start of this week', function () {&#13;
+                var result = handler.getStartOfWeekForUser(test_user_sys_id);&#13;
+                var gdt = new GlideDateTime(result.getValue());&#13;
+                expect(gdt.isValid()).toBeTruthy();&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getStartDateEncodedQuery', function () {&#13;
+            it('adds date to encoded query', function () {&#13;
+                var result = handler.getStartDateEncodedQuery(test_user_sys_id);&#13;
+                expect(result.match(/start_date&gt;=javascript:gs\.dateGenerate\('\d\d\d\d-\d{1,2}-\d{1,2}','start'\)/g)).toBeTruthy();&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('compareToStartOfWeek', function () {&#13;
+            it('0 if equal, 1 if pto_date before start of week, -1 if pto_date after start of week', function () {&#13;
+                &#13;
+                var testAssertion = {&#13;
+                    name: '0 if equal',&#13;
+                    shouldbe: 0,&#13;
+                    value: handler.compareToStartOfWeek(test_user_sys_id, handler.getStartOfWeekForUser(test_user_sys_id).getValue()),&#13;
+                };&#13;
+                assertEqual(testAssertion);&#13;
+&#13;
+                testAssertion = {&#13;
+                    name: '1 if pto_date before start of week',&#13;
+                    shouldbe: 1,&#13;
+                    value: handler.compareToStartOfWeek(test_user_sys_id, '2022-2-2'),&#13;
+                };&#13;
+                assertEqual(testAssertion);&#13;
+&#13;
+&#13;
+                testAssertion = {&#13;
+                    name: '-1 if pto_date after start of week',&#13;
+                    shouldbe: -1,&#13;
+                    value: handler.compareToStartOfWeek(test_user_sys_id, '2222-2-2'),&#13;
+                };&#13;
+                assertEqual(testAssertion);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getPTODate', function () {&#13;
+            it('gets date from pto object', function () {&#13;
+                var result = handler.getPTODate(basic_pto_object);&#13;
+                expect(result).toBe('2023-11-01');&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getEEID', function () {&#13;
+            it('gets employee code (employee id)', function () {&#13;
+                var result = handler.getEEID(basic_pto_object);&#13;
+                expect(result).toBe('0027');&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getPTODuration', function () {&#13;
+            it('gets duration from time off entry', function () {&#13;
+                var result = handler.getPTODuration(basic_time_off_entry);&#13;
+                expect(result).toBe(2.5);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getLastRequestType', function () {&#13;
+            it('gets LastRequestType from time off entry', function () {&#13;
+                var result = handler.getLastRequestType(basic_time_off_entry);&#13;
+                expect(result).toBe(handler.time_off_approved_str);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('lastRequestIsApproved', function () {&#13;
+            it('returns true if last request approved and false otherwise', function () {&#13;
+                var result = handler.lastRequestIsApproved(basic_time_off_entry);&#13;
+                expect(result).toBe(true);&#13;
+&#13;
+                // change last request type and ensure false&#13;
+                basic_time_off_entry["last_request_type"] = handler.time_off_added_str;&#13;
+                result = handler.lastRequestIsApproved(basic_time_off_entry);&#13;
+                expect(result).toBe(false);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getUserSysIDGivenEEID', function () {&#13;
+            it('gets user sys id given employee id/code', function () {&#13;
+                var result = handler.getUserSysIDGivenEEID(handler.getEEID(basic_pto_object));&#13;
+                expect(result).toBe(test_user_sys_id);&#13;
+            });&#13;
+&#13;
+            it('returns null when not found', function () {&#13;
+                var result = handler.getUserSysIDGivenEEID('4289472987424');&#13;
+                expect(result).toBe(null);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('createResourcePlan', function () {&#13;
+            it('creates resource plan given pto object and time off entry', function () {&#13;
+                var result = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                expect(result).toBeTruthy();&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(result);&#13;
+                assertResourcePlan({&#13;
+                    user_resource: test_user_sys_id,&#13;
+                    planned_hours: "2.5",&#13;
+                    date: "2023-11-01"&#13;
+                }, gr);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('setResourcePlanAllocated', function () {&#13;
+            it('updates a resource plan to be in the allocated state and associated business rule logic creates time card, deletes time card', function () {&#13;
+                basic_pto_object['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                var result = handler.setResourcePlanAllocated(sys_id);&#13;
+                expect(result).toBeTruthy();&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(result);&#13;
+                expect(gr.getValue('state')).toBe('3');&#13;
+&#13;
+                assertTimeCardCount(1, sys_id);&#13;
+&#13;
+                handler.deleteAllRelevantResourcePlansForUser(test_user_sys_id);&#13;
+&#13;
+                assertTimeCardCount(0, sys_id);&#13;
+&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('deleteAllRelevantResourcePlansForUser', function () {&#13;
+            it('deletes relevant resource plans (recent resource plans)', function () {&#13;
+                // need to add day(s) because we cannot create one for sunday which isn't a working day for this user.&#13;
+                basic_pto_object['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                expect(sys_id).toBeTruthy();&#13;
+                var count = handler.deleteAllRelevantResourcePlansForUser(test_user_sys_id);&#13;
+                expect(count).toBeGreaterThan(0);&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                expect(gr.get(sys_id)).toBeFalsy();&#13;
+            });&#13;
+&#13;
+            it('does not delete irrelevant resource plans (old resource plans)', function () {&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                expect(sys_id).toBeTruthy();&#13;
+                var count = handler.deleteAllRelevantResourcePlansForUser(test_user_sys_id);&#13;
+                expect(count).toBe(0);&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                expect(gr.get(sys_id)).toBeTruthy();&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('getUserListFromResourcePlan', function () {&#13;
+            it('returns list of users from user resource field', function () {&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                expect(sys_id).toBeTruthy();&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(sys_id);&#13;
+                var result = PTOHandler.getUserListFromResourcePlan(gr);&#13;
+                expect(result).toEqual([test_user_sys_id]);&#13;
+            });&#13;
+&#13;
+            it('returns list of user from members list field', function () {&#13;
+                var members_list_val = "70a1edcbdbbf3010c7ae7c923996191e,b0a1adcbdbbf3010c7ae7c92399619d4";&#13;
+&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                expect(sys_id).toBeTruthy();&#13;
+&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(sys_id);&#13;
+&#13;
+                gr.user_resource = '';&#13;
+                gr.resource_type = 'group';&#13;
+                gr.members_list = members_list_val;&#13;
+                gr.group_resource = '88a60198dbf197000da080c74b961950'; // SN Admins&#13;
+                // expect(gr.update()).toBeTruthy();&#13;
+                var result = PTOHandler.getUserListFromResourcePlan(gr);&#13;
+                expect(result).toEqual(members_list_val.split(','));&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('handleTimeOffEntry', function () {&#13;
+            it('if approved, creates resource plan and sets allocated.', function () {&#13;
+                var sys_id = handler.handleTimeOffEntry(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                expect(sys_id).toBeTruthy();&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(sys_id);&#13;
+                expect(gr.getValue('state')).toBe('3');&#13;
+            });&#13;
+&#13;
+            it('if not approved, does nothing.', function () {&#13;
+                basic_time_off_entry['last_request_type'] = handler.time_off_unapproved_str;&#13;
+                expect(handler.handleTimeOffEntry(basic_pto_object, basic_time_off_entry, test_user_sys_id)).toBeFalsy();&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('createTimeCard', function () {&#13;
+            it('creates time card', function () {&#13;
+                basic_pto_object['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                handler.setResourcePlanAllocated(sys_id);&#13;
+&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(sys_id);&#13;
+                expect(gr.getValue('state')).toBe('3');&#13;
+&#13;
+                var tc_sys_id = PTOHandler.createTimeCard(gr, test_user_sys_id);&#13;
+                var tc_gr = new GlideRecord('time_card');&#13;
+                tc_gr.get(tc_sys_id);&#13;
+&#13;
+                assertTimeCard({&#13;
+                    resource_plan: sys_id,&#13;
+                    user: test_user_sys_id,&#13;
+                    day_of_week: gr.start_date.getByFormat('EEEE').toLowerCase(),&#13;
+                    planned_hours: '2.5'&#13;
+                }, tc_gr);&#13;
+            });&#13;
+        });&#13;
+&#13;
+        describe('business rule', function () {&#13;
+            // standard create delete handled in setResourcePlanAllocated describe section.&#13;
+&#13;
+            it('deletes timecard when work type changes.', function () {&#13;
+                basic_pto_object['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                var result = handler.setResourcePlanAllocated(sys_id);&#13;
+                expect(result).toBeTruthy();&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(result);&#13;
+                expect(gr.getValue('state')).toBe('3');&#13;
+&#13;
+                assertTimeCardCount(1, sys_id);&#13;
+&#13;
+                gr.operational_work_type = 'training';&#13;
+                gr.update();&#13;
+&#13;
+                assertTimeCardCount(0, sys_id);&#13;
+&#13;
+            });&#13;
+&#13;
+            it('deletes timecard state changes to a bad state.', function () {&#13;
+                basic_pto_object['date'] = getRecentWorkDay(test_user_sys_id);&#13;
+                var sys_id = handler.createResourcePlan(basic_pto_object, basic_time_off_entry, test_user_sys_id);&#13;
+                var result = handler.setResourcePlanAllocated(sys_id);&#13;
+                expect(result).toBeTruthy();&#13;
+                var gr = new GlideRecord('resource_plan');&#13;
+                gr.get(result);&#13;
+                expect(gr.getValue('state')).toBe('3');&#13;
+&#13;
+                assertTimeCardCount(1, sys_id);&#13;
+&#13;
+                gr.state = 8; // cancelled&#13;
+                gr.update();&#13;
+&#13;
+                assertTimeCardCount(0, sys_id);&#13;
+&#13;
+            });&#13;
+        });&#13;
+&#13;
+    });&#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+// uncomment the next line to execute this script as a jasmine test&#13;
+jasmine.getEnv().execute();&#13;
+</value><variable display_value="Test script">989d9e235324220002c6435723dc3484</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>b6c38fe387048210076fcb77cebb35a0</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-05 15:51:04</sys_created_on><sys_id>fde50fa787048210076fcb77cebb3527</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-05 15:51:04</sys_updated_on><value>3.1</value><variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable></sys_variable_value></record_update>]]></payload>
+<payload_hash>-1602704556</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>626bd50b1b20c2d0b48764e6ec4bcbfd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b90a010000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>Run Server Side Script</target_name>
+<type>Test Step</type>
+<update_domain>global</update_domain>
+<update_guid>142761b8f35c8a1073605a068a55e30c</update_guid>
+<update_guid_history>142761b8f35c8a1073605a068a55e30c:-1602704556,0d90847c26548a10d37aab4f8d590edc:-1758804322,7730cc3c4e548a10fb118db3e2361f8b:1115273215,86fff3e8df548a10a862c5bbdb893433:1043944798,e67f37e890548a10503a0f6eb3ad7381:-88485314,d83ff3e835548a10517ba468d0eba23d:-285597788,2c8df368c2548a10e1e2e4dcd7a938ed:-88485314,0ccbfba44e548a10a75553572e642da0:265857305,1e8bfba4c4548a10bbbc3a5993603b99:293774231,7604fb14a1104a105e7001677f4a2ea8:1222425111,9bd37750a2104a108b3f1e34276234a1:1281812503,7573bf90b2104a102997dc4ee2b68a71:-1393031897,08e0331ce5dc0a10e0df55e73a2185e8:2142467182,c5aefc14f8dc8610f707e45636e64af6:-1393031897,cb6b7090bfdc8610c792da3720db9d7f:-1344938812,98b33014999c86101de3f6ca582d4070:1136602447,6cac50d08d1c8610bcd799e458d3851d:1199287683,074c50d0a81c8610945187dbec68c303:1347554431,f0fa541c5dd886108e1b93000e178569:397319680,1db71cd447d88610885947e3347c1ac0:1114828619,52c5189454d88610c9559257c9fe43e2:-978875588,4a35109466d8861004e611b5a316b15c:-948660810,4664dcd03bd886106c1f8e283b0d0649:909095844,35b3d0144ed88610640b565ce8d76598:128151724,8933dc1065d886102ed22edea38f9bae:-1216619342,4792945045d886108f7479590ba8452e:220552128,f6a1149cc59886102be2760d9b1bb7ae:1844560718,33311c1000d886105fe81169bdb66fef:1205804400,578e0c5cac988610d636defe66f0b6de:-161685998,90fd4c58bf988610e09f0ff7c99aad73:-73978074,978a04d4f8988610a9fdb613025f3dae:728563192,1974c05c895886109e936f72500b7018:-321694812,0581c4d4715886109d26429adaa111b5:1066478481,4c51ccd4935886103a6e69709817c853:-1121421364,57a93308e71886108825e51916866989:1801896326,0be8f3848d188610318aab48bc5edb18:1321549766,87b67f00fa1886101ba9b176f1944619:-1903437538,bd15b30c8fd486104ec13ca3cf8ba45d:-226531826,c574f3c850d486101a27eb20239c8ef7:270256438,81e3f344f3d486107aaed72a3a908034:-453304780,71b17f4427d486109e1c93127432ea2c:-310970721,00d0334080d48610fbf3a21d33e22935:-1139430642,238590c47e100610247f948b443ad293:-560290945,34e35c4424100610f26fd93fc5fb33b2:1986119154,b2ac4ccca79cc210cfd775cf4747fe0f:-252735884,cc28008c369cc210ba83442f2b5d13fa:618198138,91e7448c299cc210d020bd00cb25620a:-255800289,a717c8c8559cc210ab7016d78771f56b:1824786018,a3750884fa9cc210ab7208f6b840c201:-1515693100,aca40c08529cc21039d0a98b23a3fa7b:-1997391418,1a1084848f9cc21022aa69a2b480c9c4:1855528750,032eb737fc8cc2100b47e5a32f9103b6:292417512,275cb3bfcd4cc21035ba6fecd9a5847d:545183063,341cb3ffc74cc2103256f89998d33e3c:1739055290,cae6fb3fc04cc2106be6e2f1e2441d0a:1059885917,75a6fb3f034cc210b88658a86a3a851a:1975267822,e374b737d34cc2107be7fb18d316a60e:1874304701,ab53ffffd10cc210c9f0b4116f45a074:-934947203,aca27373dc4cc2100ece3ffc2fbf503e:-703559893,f252b373a74cc21094399cdcdd2b90d5:-1401118141,02cee3b7150cc210a3d0304e2a1fb5cb:446464016,9c7d6ff31e0cc210644bca24efc1062c:-1248127415,edec6ff3bb0cc2106421ae72d64e9f18:1042620085,363b23ff1bc8c21071ee8090efec6e41:-661519140,2b2a2f7f99c8c21004ab81cf4ad18ad3:878356121,cf0aabbfe1c8c2108d11f7ac5d2ba414:952369171,df092b7f71c8c210df8d2dfe6e7ca70d:-313315197,85c8a37f66c8c210150268112ac88278:198916753,9878673b87c8c210580f050077595956:-565786578,7a806fbfea88c210d6ffe2ebc16ff01c:1768008777,82de13bb9e88c21090ac77ab8767f604:1096364932,5c4a1b73a888c2105bf96b5061ebb487:1014939895,32ef8f63ad4482100cb8adfe6bc597b5:1147765294,d66d8faf07048210b0bb66130ee52260:830657589,eacc836f2904821094abb8a0fa2304bb:1273534959,6cac03afde04821042cded46fafda581:499666789,30bb036ff0048210dcf3799eba14ea5b:-190483968,75e50fa7350482106cbe9814bb31742a:-1639878212</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysrule_quota_84622fa19f1122005cf3ffa4677fcf1f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_quota"><sysrule_quota action="INSERT_OR_UPDATE"><active>true</active><condition table="v_quota_transaction">type=rest^ORtype=json^urlNOT LIKEsysparm_payload_type=edge_encryption_distribution^urlNOT LIKEsysparm_payload_type=machine_learning_download^urlNOT LIKEsysparm_payload_type=distribution_download^EQ<item display_value="REST" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="rest"/><item display_value="JSON" endquery="false" field="type" goto="false" newquery="false" operator="=" or="true" value="json"/><item endquery="false" field="url" goto="false" newquery="false" operator="NOT LIKE" or="false" value="sysparm_payload_type=edge_encryption_distribution"/><item endquery="false" field="url" goto="false" newquery="false" operator="NOT LIKE" or="false" value="sysparm_payload_type=machine_learning_download"/><item endquery="false" field="url" goto="false" newquery="false" operator="NOT LIKE" or="false" value="sysparm_payload_type=distribution_download"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description>Default Rule for all REST and JSON transactions. </description><log_only>false</log_only><max_db_time/><max_duration>600</max_duration><max_events/><max_jobs/><max_outbound_http_requests/><max_outbound_http_time/><max_queries/><max_rules/><max_stmt_time/><name>REST and JSON Catch All</name><order>300</order><sys_class_name>sysrule_quota</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-08-17 21:36:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>84622fa19f1122005cf3ffa4677fcf1f</sys_id><sys_mod_count>9</sys_mod_count><sys_name>REST and JSON Catch All</sys_name><sys_overrides/><sys_package display_value="REST API Provider" source="com.glide.rest">f9108fa4db0113000da080c74b9619f8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_quota_84622fa19f1122005cf3ffa4677fcf1f</sys_update_name><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-09 07:20:32</sys_updated_on></sysrule_quota></record_update>]]></payload>
+<payload_hash>-1693745127</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>6a6bd50b1b20c2d0b48764e6ec4bcbfc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b90a0c0000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>REST and JSON Catch All</target_name>
+<type>Transaction Quota Rule</type>
+<update_domain>global</update_domain>
+<update_guid>2267f9f4eddc8a10f9d288c70b66507b</update_guid>
+<update_guid_history>2267f9f4eddc8a10f9d288c70b66507b:-1693745127,e267f9f4abdc8a1083fa20baaff92579:-1622672580</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_26cf3a2387048210076fcb77cebb351c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PTOHandler&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PTOHandler&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PTOHandler = Class.create();
+PTOHandler.prototype = {
+    initialize: function (resultUtil) {
+        if (resultUtil) {
+            this.resultMessage = resultUtil;
+        } else {
+            this.resultMessage = new ResultUtil();
+        }
+        
+        this.error_could_not_parse_json = "Could not parse JSON provided.";
+        this.error_handling_pto_object = "Error occurred when trying to handle PTO Object: ";
+
+        this.info_resource_plan_short_desc = '*DO NOT TOUCH THIS DESCRIPTION* - Resource plan created via automation. - *DO NOT TOUCH THIS DESCRIPTION*';
+        this.info_successfully_processed_count_str = "Successfully processed";
+
+        this.warning_no_user_ee_id = "Could not find user with employee id: ";
+
+        // last request types
+        this.time_off_added_str = "Time-Off Request Added";
+        this.time_off_approved_str = "Time-Off Request Approved";
+        this.time_off_unapproved_str = "Time-Off Request Unapproved";
+        this.time_off_deleted_str = "Time-Off Request Deleted";
+        this.time_off_denied_str = "Time-Off Request Denied";
+
+        this.time_off_entries_field_str = "time_off_entry_dict";
+        this.time_off_obj_field_str = "time_off_dict";
+    },
+
+    getStartOfWeekForUser: function (user_id) {
+        // returns glideDate
+        var start_of_Week = TimeCardUtil.getStartOfCurrentWeek(user_id);
+        return start_of_Week;
+    },
+
+    getStartDateEncodedQuery: function (user_id) {
+        date_str = this.getStartOfWeekForUser(user_id).getDisplayValue();
+        return "start_date&gt;=javascript:gs.dateGenerate('" + date_str + "','start')";
+    },
+
+    compareToStartOfWeek: function (user_id, pto_date) {
+        // 0 if equal, 1 if pto_date before start of week, -1 if pto_date after start of week
+        var start_of_Week = TimeCardUtil.getStartOfCurrentWeek(user_id);
+        gdt = new GlideDateTime(start_of_Week.getDisplayValue());
+        return gdt.compareTo(new GlideDateTime(pto_date));
+    },
+
+    /**
+     * Main function to call.
+     * jsonStr: the json string to parse.
+     * isInitialLoad: determines if we are checking for recent pto. 
+     *     BE CAREFUL, this will blindly push pto and is intended to be used only once to load an initial system.
+     */
+    parseAndProcessPTO: function (jsonStr, isInitialLoad) {
+        try {
+            var parsed_json = JSON.parse(jsonStr);
+            gs.log('typeof parsed_json:' + typeof parsed_json);
+
+            var time_off_dict = parsed_json[this.time_off_obj_field_str];
+            gs.log('typeof time_off_dict:' + typeof time_off_dict);
+            
+            var keys = Object.keys(time_off_dict);
+            gs.log('keys len:' + keys.length);
+            var successfully_processed_count = 0;
+            for(var i = 0; i &lt; keys.length; i++) {
+                var key = keys[i];
+                var pto_obj = time_off_dict[key];
+                gs.log('pto_obj: ' + JSON.stringify(pto_obj));
+                
+                try {
+                    successfully_processed_count += this.handlePTOObject(pto_obj, isInitialLoad);
+                } catch (e) {
+                    this.resultMessage.addErrorMessages([this.error_handling_pto_obj + JSON.stringify(pto_obj), e.toString()]);
+                }
+            }
+
+            this.resultMessage.upsertCustomField("successfully_processed_count", successfully_processed_count);
+        } catch (e) {
+            this.resultMessage.addErrorMessages([this.error_could_not_parse_json, e.toString()]);
+        }
+        
+        return this.resultMessage;
+    },
+
+    handlePTOObject: function (pto_obj, isInitialLoad) {
+        // determine how to handle object
+
+        // get user
+        var ee_id = this.getEEID(pto_obj);
+        var user_sys_id = this.getUserSysIDGivenEEID(ee_id);
+        var processed_count = 0;
+
+        if (user_sys_id) {
+
+            // if initial load don't worry about relevant dates.
+            // ensure pto obj date is after or on the set date threshold, meaning that it is recent and relevant.
+            if (!isInitialLoad &amp;&amp; this.compareToStartOfWeek(user_sys_id, this.getPTODate(pto_obj)) == 1) {
+                // if we're here the date is not relevant, fast fail.
+                return processed_count;
+            }
+
+            // wipe objects, unless initial load
+            if (!isInitialLoad) {
+                this.deleteAllRelevantResourcePlansForUser(user_sys_id);
+            }
+            
+            // process time off entries
+            time_off_entries_obj = pto_obj[this.time_off_entries_field_str];
+            time_off_entry_keys = Object.keys(time_off_entries_obj);
+
+            for (var i = 0; i &lt; time_off_entry_keys.length; i++) {
+                key = time_off_entry_keys[i];
+                time_off_entry = time_off_entries_obj[key];
+ 
+                if(this.handleTimeOffEntry(pto_obj, time_off_entry, user_sys_id)) {
+                    processed_count++;
+                }
+            }
+        } else {
+            this.resultMessage.addWarningMessage(this.warning_no_user_ee_id + ee_id);
+        }
+
+        return processed_count;
+    },
+
+    handleTimeOffEntry: function (pto_obj, time_off_entry, user_sys_id) {
+        if (this.lastRequestIsApproved(time_off_entry)) {
+            // create
+            resource_plan_sys_id = this.createResourcePlan(pto_obj, time_off_entry, user_sys_id);
+            this.resultMessage.addInfoMessage('create_resource_plan:' + resource_plan_sys_id);
+            this.resultMessage.addInfoMessage('for_user:' + user_sys_id);
+            return this.setResourcePlanAllocated(resource_plan_sys_id);
+        }
+    },
+
+    deleteAllRelevantResourcePlansForUser: function (user_sys_id) {
+        var gr = new GlideRecord('resource_plan');
+        gr.addQuery('user_resource', user_sys_id);
+        gr.addQuery('short_description', this.info_resource_plan_short_desc);
+        gr.addEncodedQuery(this.getStartDateEncodedQuery(user_sys_id));
+        gr.query();
+        var delete_count = 0;
+
+        while (gr.next()) {
+            gr.deleteRecord();
+            delete_count++;
+        }
+
+        return delete_count;
+    },
+
+    createResourcePlan: function (pto_obj, time_off_entry, user_sys_id) {
+        var gr = new GlideRecord('resource_plan');
+        gr.initialize();
+        gr.resource_type = 'user';
+        gr.user_resource = user_sys_id;
+        gr.request_type = 'hours';
+        gr.planned_hours = this.getPTODuration(time_off_entry);
+        gr.short_description = this.info_resource_plan_short_desc;
+        gr.distribution = 'plan_duration';
+        gr.distribution_type = 'even';
+        gr.operational_work_type = 'oof_time_off';
+        gr.plan_type = 'operational_work';
+        
+        // appears to always be created in the requested state regardless of creation strategy
+        // Once created, we will perform an update operation on the glide record down the road to set allocated
+        gr.state = 2; // requested state
+
+        // setup glide date for start and end date values
+        gd = new GlideDate();
+        gd.setValue(this.getPTODate(pto_obj));
+
+        // set date values
+        gr.setValue('start_date', gd);
+        gr.setValue('end_date', gd);
+
+        return gr.insert();
+    },
+
+    setResourcePlanAllocated: function (sys_id) {
+        var gr = new GlideRecord('resource_plan');
+        if (gr.get(sys_id)) {
+            gr.state = 3; // allocated
+            return gr.update();
+        }
+    },
+
+    getUserSysIDGivenEEID: function (ee_id) {
+        // takes employee ID and finds user in system.
+        var result = null;
+        var gr = new GlideRecord('sys_user');
+        gr.addQuery('u_ee_id', ee_id);
+        gr.query();
+
+        if (gr.getRowCount() == 1){
+            gr.next();
+            result = gr.getUniqueValue();
+        }
+
+        return result;
+    },
+
+    getPTODate: function (pto_obj) {
+        return pto_obj["date"];
+    },
+
+    getPTODuration: function (time_off_entry) {
+        return time_off_entry["duration"];
+    },
+
+    getEEID: function (pto_obj) {
+        return pto_obj["employee_code"];
+    },
+
+    getLastRequestType: function (time_off_entry) {
+        return time_off_entry["last_request_type"];
+    },
+
+    lastRequestIsApproved: function (time_off_entry) {
+        if (this.getLastRequestType(time_off_entry) == this.time_off_approved_str) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    type: 'PTOHandler'
+};
+
+PTOHandler.timeCardComment = "*DO NOT CHANGE* - This was created via automation. - *DO NOT CHANGE*";
+
+PTOHandler.deleteAssociatedTimeCards = function (resource_plan_gr) {
+    var gr = new GlideRecord('time_card');
+
+    // because of manual creations via groups and members list vs an explicit user
+    // we aren't explicitely checking for a user
+    // gr.addQuery('user', resource_plan_gr.user_resource)
+
+    gr.addQuery('resource_plan', resource_plan_gr.getUniqueValue());
+    gr.addQuery('category', 'oof_time_off');
+    gr.addQuery('comments', PTOHandler.timeCardComment);
+
+    gr.query();
+
+    gr.deleteMultiple(); // doesn't have currency field so safe to delete many records at once
+};
+
+PTOHandler.getUserListFromResourcePlan = function (resource_plan_gr) {
+    var user_resource = resource_plan_gr.getValue('user_resource');
+    var members_list = resource_plan_gr.getValue('members_list');
+
+    var users = [];
+
+    if (user_resource) {
+        users.push(user_resource);
+    } else if (members_list) {
+        users = members_list.split(',');
+    }
+
+    return users;
+};
+
+PTOHandler.createTimeCard = function (resource_plan_gr, user_sys_id) {
+    var user_gr = new GlideRecord('sys_user');
+    user_gr.get(user_sys_id);
+
+    var gr = new GlideRecord('time_card');
+    gr.initialize();
+    gr.setWorkflow(false);
+    gr.category = 'oof_time_off';
+    gr.u_activity = 'oof_time_off';
+    gr.comments = PTOHandler.timeCardComment;
+    gr.resource_plan = resource_plan_gr.getUniqueValue();
+    gr.user = user_sys_id;
+    gr.state = 'Approved';
+
+    // set duration
+    var day_of_week = resource_plan_gr.start_date.getByFormat('EEEE').toLowerCase();
+    gr.setValue(day_of_week, resource_plan_gr.planned_hours);
+    gr.total = resource_plan_gr.planned_hours;
+
+    var start_of_week = TimeCardUtil.getStartOfWeekByDate(resource_plan_gr.getValue('start_date'), user_sys_id);
+    var gd = new GlideDate();
+    gd.setValue(start_of_week.getValue());
+    var timeSheetFactory = new TimeSheetFactory();
+    var timeSheetId = timeSheetFactory.getTimeSheet(user_sys_id, start_of_week);
+    gr.week_starts_on = gd;
+    gr.time_sheet = timeSheetId;
+    gr.approved_on = new GlideDateTime();
+    gr.approved_by = gs.getUserID();
+    
+    gr.u_position_title = user_gr.getValue('u_position_title');
+    
+    return gr.insert();
+};
+
+PTOHandler.createAssociatedTimeCards = function (resource_plan_gr) {
+    // get user or users
+    var users = PTOHandler.getUserListFromResourcePlan(resource_plan_gr);
+
+    for (var i = 0; i &lt; users.length; i++) {
+        var user_sys_id = users[i];
+
+        // rather than worrying about all the wierd update cases, we will delete and create a fresh one.
+        this.deleteAssociatedTimeCards(resource_plan_gr);
+        PTOHandler.createTimeCard(resource_plan_gr, user_sys_id);
+    }
+
+};
+
+PTOHandler.handleResourcePlanOperation = function (current_resource_plan_gr, previous_resource_plan_gr) {
+    var states_to_delete = ['1','2','4','8'];
+
+    if (current_resource_plan_gr.operation() == 'delete') {
+        PTOHandler.deleteAssociatedTimeCards(current_resource_plan_gr);
+    } else if (current_resource_plan_gr.operation() == 'insert') {
+        // from what I can tell we cannot insert the resource plan in the preferred state for creating time cards.
+        // the state must be allocated to associate time cards with a resource plan, but it cannot be allocated upon initial insertion.
+        // do nothing for now.
+    } else {
+        // must be an 'update' case
+        if (current_resource_plan_gr.getValue('state') == '3' &amp;&amp; current_resource_plan_gr.getValue('operational_work_type') == 'oof_time_off') 
+        {
+            // if in a good state ensure time card reflects a good state.
+            PTOHandler.createAssociatedTimeCards(current_resource_plan_gr);
+        } else if (states_to_delete.indexOf(current_resource_plan_gr.getValue('state')) != -1) {
+            // if no longer good state, delete
+            PTOHandler.deleteAssociatedTimeCards(current_resource_plan_gr);
+        } else if (previous_resource_plan_gr &amp;&amp; previous_resource_plan_gr.operational_work_type == 'oof_time_off' &amp;&amp;
+                    current_resource_plan_gr.operational_work_type != 'oof_time_off') 
+        {
+            // if no longer oof time, delete
+            PTOHandler.deleteAssociatedTimeCards(current_resource_plan_gr);
+        }
+
+    }
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kyle.scharnhorst@Continuant.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-05 15:24:53&lt;/sys_created_on&gt;&lt;sys_id&gt;26cf3a2387048210076fcb77cebb351c&lt;/sys_id&gt;&lt;sys_mod_count&gt;31&lt;/sys_mod_count&gt;&lt;sys_name&gt;PTOHandler&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_26cf3a2387048210076fcb77cebb351c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kyle.scharnhorst@Continuant.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-10 01:38:32&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1857053308</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>6e6bd50b1b20c2d0b48764e6ec4bcbfd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b90a1c0000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>PTOHandler</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>2ab2b1cd71540e101228c58645e7d512</update_guid>
+<update_guid_history>2ab2b1cd71540e101228c58645e7d512:1857053308,2bc6ed782d5c8a103f59a01b95297829:34484627,779a33ac46148a1048f8af461576d835:-618030749,69897bec29148a109cd5dcacb9edbf50:564349917,361ca764ab148a1043fcfde4763a0418:-1458829449,37782b60d3148a1063b28d5d81bdd8a3:91460707,02f22ba888d08a1050eb0195d376fd3f:1337386706,e68e97a442d08a10ffe6c1032ea709bb:1462172633,6373bf1443104a1073d8a4e486185040:-726214161,f6a17f10de104a10a43acddcd013bb63:1284530890,115033dcb2dc0a108607ad87f66882eb:-280694830,f66309d852dc8610178d8dbe8383fecf:-726214161,f32349581bdc8610f1673122fe93ace5:1561485735,e032cd5808dc8610d815dc51c372a6fc:-937284281,69f10d9441dc861099b5c5fe45d8152c:1576359270,1711cd54f9dc86103b0c4b6cd2fc4966:2019886613,b820c554e6dc8610dc20d96feec70c15:-1641249583,c73ebc14cbdc8610d6c3110b8d5c5cea:456529091,04edf49099dc86107434765c73c7c8f5:-1461611933,8cad381431dc8610de8b17381f91a4af:-2140097405,c48b34906fdc8610b9ed3474bc95e18b:1528996731,7adc9cd0271c8610ad460f6033a7ae99:1147427349,24a3c418795886106b7ee574a5af74e4:-467704229,92220818f958861032316f1e78580182:139417755,16937f44add486105c171c53ee672aa1:-211977277,f6bbc8c038dcc210b54e01d4b71e2da7:79519027,9f39448c1d9cc2101a855aa08f4a1d10:-1661886743,21a7008cab9cc2109218e1ef5249f5cf:-1730077435,b29c3fb3b18cc210dc234b52b9e5cccb:-1355086636,d51ee3b7040cc21040cc60952114fef8:-1784858628,21328fa3030482107c3af76e3961c58c:-277026315,56efb6233804821030da18d099c20755:-2051854893</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_version_5a4b2054875c8610076fcb77cebb35a0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_version"><sys_ws_version action="INSERT_OR_UPDATE"><active>true</active><deprecated>false</deprecated><is_default>true</is_default><short_description/><sys_class_name>sys_ws_version</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-07 12:30:59</sys_created_on><sys_id>5a4b2054875c8610076fcb77cebb35a0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>v1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_version_5a4b2054875c8610076fcb77cebb35a0</sys_update_name><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-07 12:30:59</sys_updated_on><version>1</version><version_id>v1</version_id><web_service_definition display_value="Push PTO">c5eae814875c8610076fcb77cebb359f</web_service_definition></sys_ws_version></record_update>]]></payload>
+<payload_hash>-2118234328</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>a66bd50b1b20c2d0b48764e6ec4bcbfe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b909f20000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>v1</target_name>
+<type>Scripted REST Version</type>
+<update_domain>global</update_domain>
+<update_guid>ae4b2054475c8610e1fdd0736b3353a5</update_guid>
+<update_guid_history>ae4b2054475c8610e1fdd0736b3353a5:-2118234328,6e4b2054985c86103cc04fa54f5891a2:-231287767</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_c5efb34487588610076fcb77cebb35c8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;true&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;resource_plan&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;resource plan time card handler&lt;/name&gt;&lt;order&gt;99999&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	PTOHandler.handleResourcePlanOperation(current, previous);
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kyle.scharnhorst@Continuant.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-07 09:23:25&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c5efb34487588610076fcb77cebb35c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;resource plan time card handler&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c5efb34487588610076fcb77cebb35c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kyle.scharnhorst@Continuant.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-07 10:31:11&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c5efb34487588610076fcb77cebb35c8"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1611588946</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>aa6bd50b1b20c2d0b48764e6ec4bcbfd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b909e80000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table>resource_plan</table>
+<target_name>resource plan time card handler</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>37df04dce198861034756198b4650b91</update_guid>
+<update_guid_history>37df04dce198861034756198b4650b91:-1611588946,79fe4c5ce6988610005b4319b20215c3:-288701989,0b500c1055588610d173c180b94995d6:623555096</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_d88b6454875c8610076fcb77cebb35ec</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri&gt;/api/ntin/push_pto&lt;/default_operation_uri&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;Parse and Process PTO&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var handler = new PTOHandler();
+	var message = request.body.dataString;
+	gs.log('pto integration message: ' + message);
+
+	var is_initial_load = false;
+	var resultMessage = handler.parseAndProcessPTO(message, is_initial_load);
+	gs.log('pto integration response: ' + JSON.stringify(resultMessage));
+	response.setBody(resultMessage);
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/ntin/v1/push_pto&lt;/operation_uri&gt;&lt;produces&gt;application/json&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kyle.scharnhorst@Continuant.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-07 12:44:57&lt;/sys_created_on&gt;&lt;sys_id&gt;d88b6454875c8610076fcb77cebb35ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Parse and Process PTO&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_d88b6454875c8610076fcb77cebb35ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kyle.scharnhorst@Continuant.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-10 01:37:03&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Push PTO"&gt;c5eae814875c8610076fcb77cebb359f&lt;/web_service_definition&gt;&lt;web_service_version display_value="v1"&gt;5a4b2054875c8610076fcb77cebb35a0&lt;/web_service_version&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1878957284</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>e26bd50b1b20c2d0b48764e6ec4bcbfe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b90a140000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>Parse and Process PTO</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>2462f18912540e103f40d90a45284abe</update_guid>
+<update_guid_history>2462f18912540e103f40d90a45284abe:-1878957284,8dec71300e10ca10d853349a9008f8e5:2031622930,dfdcf9b0f710ca101304e6979c97c937:298640929,d25ab1307710ca10986d2fda6ad6569c:690081041,e4057dbc2f9c8a10a2d0fc2a5e882f10:739102016,0f49ed7cf75c8a1057c13d62ab6037ef:690081041,502ca764ab148a10ba6d3a871f359c93:-1712283880,4099eba0b3148a106c379b2ac1c9ebde:177207783,aa9b1fec7d908a10a5a4091d54f49342:-1712283880,437e6cd44a5c8610425dfe72b5dc18ec:302833943</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_atf_test_4c7207e387048210076fcb77cebb3520</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test"><sys_atf_test action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>tests this script include</description><enable_parameterized_testing>false</enable_parameterized_testing><fail_on_server_error>true</fail_on_server_error><name>PTOHandler</name><parameters/><remember/><sys_class_name>sys_atf_test</sys_class_name><sys_created_by>kyle.scharnhorst@Continuant.com</sys_created_by><sys_created_on>2024-02-05 15:37:17</sys_created_on><sys_id>4c7207e387048210076fcb77cebb3520</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PTOHandler</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_atf_test_4c7207e387048210076fcb77cebb3520</sys_update_name><sys_updated_by>kyle.scharnhorst@Continuant.com</sys_updated_by><sys_updated_on>2024-02-05 15:37:17</sys_updated_on></sys_atf_test><sys_variable_value action="delete_multiple" query="document_key=4c7207e387048210076fcb77cebb3520"/></record_update>]]></payload>
+<payload_hash>609957660</payload_hash>
+<remote_update_set display_value="KRS-Global-STRY0010767-pto">266bd50b1b20c2d0b48764e6ec4bcbfc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>kyle.stinar@continuant.com</sys_created_by>
+<sys_created_on>2024-02-28 15:20:15</sys_created_on>
+<sys_id>e66bd50b1b20c2d0b48764e6ec4bcbfd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d97b909d00000001</sys_recorded_at>
+<sys_updated_by>kyle.stinar@continuant.com</sys_updated_by>
+<sys_updated_on>2024-02-28 15:20:15</sys_updated_on>
+<table/>
+<target_name>PTOHandler</target_name>
+<type>Test</type>
+<update_domain>global</update_domain>
+<update_guid>ccc207e321048210b1aecdd05a5eb535</update_guid>
+<update_guid_history>ccc207e321048210b1aecdd05a5eb535:609957660</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
