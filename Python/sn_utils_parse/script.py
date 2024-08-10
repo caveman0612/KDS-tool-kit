@@ -38,7 +38,7 @@ path = "1main/Python/sn_utils_parse/"
 
 print("--------------start----------------------")
 print()
-dn = os.path.abspath(path + "script.js")
+dn = os.path.abspath(path + "script_to_parse.js")
 
 with open(dn, 'r') as f2:
     lines = f2.readlines()
@@ -59,7 +59,7 @@ with open(dn, 'r') as f2:
                 url += data
 
 
-dn = os.path.abspath(path + "string.txt")
+dn = os.path.abspath(path + "parse_string.txt")
 
 with open(dn, 'w') as f3:
     f3.write(url)

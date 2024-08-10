@@ -1,0 +1,3 @@
+force shortcut work for lists or single record
+
+widget for consolidating many records

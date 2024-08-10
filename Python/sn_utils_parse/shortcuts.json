@@ -1,13 +1,40 @@
 {
-    "shortcut": {
-        "url": "//tab",
-        "hint": "Special slashcommand, accessible via extension keyboard shortcut",
-        "description": "My preferred keyboard bound slashcommand is the //tab command which just opens a fresh tab. I bind this to ⌥T.",
+    "devsearch": {
+        "url": "https://developer.servicenow.com/dev.do#!/search/washingtondc/All/$0",
+        "hint": "Search developer portal <search>"
+    },
+    "case": {
+        "url": "sn_customerservice_case_list.do?sysparm_query=$0",
+        "hint": "case table",
         "fields": "",
         "order": 0,
         "overwriteurl": ""
     },
-    "w": {
+    "uiscripts": {
+        "url": "sys_ui_script_list.do?sysparm_query=nameLIKE$0^ORDERBYDESCsys_updated_on",
+        "hint": "Filter UI Scripts <name>",
+        "fields": "name"
+    },
+    "uipol": {
+        "url": "sys_ui_policy_list.do?sysparm_query=short_descriptionLIKE$0^ORDERBYDESCsys_updated_on",
+        "hint": "UI Policies <name>",
+        "fields": "short_description,sys_updated_on"
+    },
+    "uipage": {
+        "url": "sys_ui_page_list.do?sysparm_query=nameSTARTSWITH$0^ORDERBYname",
+        "hint": "UI page <search>",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "uiaction": {
+        "url": "sys_ui_action_list.do?sysparm_query=nameLIKE$0^ORDERBYDESCsys_updated_on",
+        "hint": "Filter UI Actions <name>",
+        "fields": "name,table",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "spw": {
         "url": "sp_widget_list.do?sysparm_query=nameLIKE$0^ORidLIKE$0^ORDERBYDESCsys_updated_on",
         "hint": "Widgets <search>",
         "fields": "name,id",
@@ -15,11 +42,34 @@
         "order": 0,
         "overwriteurl": ""
     },
-    "stats": {
-        "url": "/stats.do",
-        "hint": "Stats.do",
-        "fields": "undefined",
-        "description": "Open the stats.do page, kinda silly since you can do /stats.do but I like it.",
+    "sysw": {
+        "url": "sys_widgets_list.do?sysparm_query=nameLIKE$0^ORidLIKE$0^ORDERBYDESCsys_updated_on",
+        "hint": "system Widgets <search>",
+        "fields": "name,id",
+        "description": "Search for widgets by name or id.",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "rcr": {
+        "url": "sys_user_role_contains_list.do?sysparm_query=containsLIKE$0^ORDERBYnull",
+        "hint": "Role Contains Roles <search>",
+        "fields": "contains,role",
+        "description": "Search for roles that contain other roles, useful for checking role hierarchies.",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "event": {
+        "url": "sysevent_register_list.do?sysparm_query=event_nameLIKE$0^ORDERBYnull",
+        "hint": "Event Registry <search>",
+        "fields": "event_name,table",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "noti": {
+        "url": "sysevent_email_action_list.do?sysparm_query=nameLIKE$0^ORDERBYorder",
+        "hint": "Notifications <search>",
+        "fields": "name,active",
+        "description": "Search for notifications by name, or get to the notification table quickly.",
         "order": 0,
         "overwriteurl": ""
     },
@@ -28,6 +78,22 @@
         "hint": "Groups <search>",
         "fields": "name,description",
         "description": "Search for groups by name or get to the group table quickly.",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "shortcut": {
+        "url": "//tab",
+        "hint": "Special slashcommand, accessible via extension keyboard shortcut",
+        "description": "My preferred keyboard bound slashcommand is the //tab command which just opens a fresh tab. I bind this to ⌥T.",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "stats": {
+        "url": "/stats.do",
+        "hint": "Stats.do",
+        "fields": "undefined",
+        "description": "Open the stats.do page, kinda silly since you can do /stats.do but I like it.",
         "order": 0,
         "overwriteurl": ""
     },
@@ -55,22 +121,6 @@
         "order": 0,
         "overwriteurl": ""
     },
-    "sla": {
-        "url": "contract_sla_list.do?sysparm_query=nameLIKE$0^ORDERBYDESCname",
-        "hint": "SLA Definitions <search>",
-        "fields": "name,type",
-        "description": "Search for SLA definitions by name, or get to the SLA table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "r": {
-        "url": "sys_user_role_list.do?sysparm_query=nameLIKE$0^ORDERBYname",
-        "hint": "Roles <search>",
-        "fields": "name,description",
-        "description": "Search for roles by name, or get to the role table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
     "cc": {
         "url": "cache.do",
         "hint": "Clear Cache",
@@ -79,39 +129,14 @@
         "order": 0,
         "overwriteurl": ""
     },
-    "dbt": {
-        "url": "sys_ux_data_broker_transform_list.do?sysparm_query=nameLIKE$0^ORDERBYname",
-        "hint": "Data Broker Server Scripts <search>",
-        "fields": "name,description",
-        "description": "Search for Data Broker Server Scripts by name, or get to the Data Broker Server Script table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "aclr": {
-        "url": "sys_security_acl_role_list.do?sysparm_query=sys_user_role.nameLIKE$0^ORDERBYDESCsys_security_acl",
-        "hint": "ACL Roles Relation <search>",
-        "fields": "sys_security_acl,sys_user_role",
-        "description": "Search for ACL Roles Relation by the role name, useful to see which ACLs that a role is affiliated with.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "elog": {
+    "eventlog": {
         "url": "sysevent_list.do?sysparm_query=sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^nameLIKE$0^ORDERBYDESCsys_created_on",
         "hint": "Event Log <search>",
         "fields": "sys_created_on,name",
-        "description": "Shows the event log for the day, useful for checking if events have been queued and processed.",
-        "order": 0,
+        "order": 50,
         "overwriteurl": ""
     },
-    "uxem": {
-        "url": "sys_ux_addon_event_mapping_list.do?sysparm_query=parent_macroponent=$sysid",
-        "hint": "UX Add-on Event Mappings for Macroponent",
-        "fields": "sys_updated_on,name",
-        "description": "Shows the UX Add-on Event Mappings for the macroponent, useful for checking if events have been mapped correctly or fixing broken mappings. Intended to be run on a macroponent record.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "alog": {
+    "applog": {
         "url": "syslog_app_scope_list.do?sysparm_query=sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^sys_scope=javascript:gs.getPreference(\"apps.current_app\")^ORDERBYDESCsys_created_on",
         "hint": "App Log for Current Scope",
         "fields": "sys_created_on,level",
@@ -128,15 +153,31 @@
         "overwriteurl": ""
     },
     "test": {
-        "url": "//env test",
+        "url": "//env continuanttest",
         "hint": "Example: Open in Test",
         "fields": "",
         "description": "Example slashcommand to open the the current record in the test environment. Double // invokes another command. Replace test with your instance prefix. (test.service-now.com)",
         "order": 0,
         "overwriteurl": ""
     },
+    "prod": {
+        "url": "//env continuant",
+        "hint": "Example: Open in prod",
+        "fields": "",
+        "description": "Example slashcommand to open the the current record in the test environment. Double // invokes another command. Replace test with your instance prefix. (test.service-now.com)",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "dev": {
+        "url": "//env continuantdev",
+        "hint": "Example: Open in dev",
+        "fields": "",
+        "description": "Example slashcommand to open the the current record in the test environment. Double // invokes another command. Replace test with your instance prefix. (test.service-now.com)",
+        "order": 0,
+        "overwriteurl": ""
+    },
     "cmptest": {
-        "url": "//diffenv test",
+        "url": "//diffenv continuanttest",
         "hint": "Example: Compare to record in Test",
         "description": "Example slashcommand to open compare the current record with the test environment. Double // invokes another command. Replace test with your instance prefix. (test.service-now.com)",
         "fields": "",
@@ -167,14 +208,6 @@
         "order": 0,
         "overwriteurl": ""
     },
-    "rcr": {
-        "url": "sys_user_role_contains_list.do?sysparm_query=containsLIKE$0^ORDERBYnull",
-        "hint": "Role Contains Roles <search>",
-        "fields": "contains,role",
-        "description": "Search for roles that contain other roles, useful for checking role hierarchies.",
-        "order": 0,
-        "overwriteurl": ""
-    },
     "cus": {
         "url": "sys_update_set.do?sys_id=javascript:gs.getPreference('sys_update_set')",
         "hint": "Current Update Set",
@@ -191,59 +224,11 @@
         "order": 0,
         "overwriteurl": ""
     },
-    "retrieve": {
-        "url": "sys_update_set_source_list.do?sysparm_query=^ORDERBYname",
-        "hint": "Remote Instances <search>",
-        "fields": "name,type",
-        "description": "Navigate to the remote instances list to retrieve update sets from lower environments.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "sj": {
-        "url": "sysauto_list.do?sysparm_query=nameLIKE$0^ORDERBYname",
-        "hint": "Scheduled Jobs <search>",
-        "fields": "name,active",
-        "description": "Search for scheduled jobs by name, or get to the scheduled job table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "event": {
-        "url": "sysevent_register_list.do?sysparm_query=event_nameLIKE$0^ORDERBYnull",
-        "hint": "Event Registry <search>",
-        "fields": "event_name,table",
-        "description": "Search for events by name, or get to the event registry table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "noti": {
-        "url": "sysevent_email_action_list.do?sysparm_query=nameLIKE$0^ORDERBYorder",
-        "hint": "Notifications <search>",
-        "fields": "name,active",
-        "description": "Search for notifications by name, or get to the notification table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
     "running": {
         "url": "sys_trigger_list.do?sysparm_query=next_actionONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^state=1^ORDERBYname",
         "hint": "Running Scheduled Jobs",
         "fields": "name,next_action",
         "description": "Shows the scheduled jobs that are currently running, useful for checking on the completion of scheduled jobs.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "ind": {
-        "url": "pa_indicators_list.do?sysparm_query=type=1^nameLIKE$0^ORDERBYorder",
-        "hint": "Indicators <search>",
-        "fields": "name,unit",
-        "description": "Search for PA Indicators by name, or get to the indicator table quickly.",
-        "order": 0,
-        "overwriteurl": ""
-    },
-    "pasc": {
-        "url": "pa_scripts_list.do?sysparm_query=nameLIKE$0^ORDERBYname",
-        "hint": "Scripts <search>",
-        "fields": "name,table",
-        "description": "Search for PA Scripts by name, or get to the script table quickly.",
         "order": 0,
         "overwriteurl": ""
     },
@@ -287,11 +272,45 @@
         "order": 0,
         "overwriteurl": ""
     },
-    "czn": {
-        "url": "/$table_list.do?sysparm_query=^JOIN$table.sys_update_name=sys_update_version.name!source_table!=sys_store_app",
-        "hint": "Filters current table to only show records that have customer updates.",
+    "mylog": {
+        "url": "/now/nav/ui/classic/params/target/syslog_list.do%3Fsysparm_query%3Dsys_created_onONToday%40javascript%3Ags.beginningOfToday()%40javascript%3Ags.endOfToday()%255Esys_created_by%253Djavascript%3A%2520gs.getUser().getEmail()%26sysparm_first_row%3D1%26sysparm_view%3D",
+        "hint": "",
         "fields": "",
-        "description": "Uses a join query to filter the current table to only show records that have customer updates. I would love to make this a switch but the current implementation doesn't support it.",
+        "order": 1,
+        "overwriteurl": ""
+    },
+    "mytasks": {
+        "url": "task_list.do?sysparm_query=assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORadditional_assignee_listDYNAMIC90d1921e5f510100a9ad2572f2b477fe^active=true",
+        "hint": "all my tasks",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "local": {
+        "url": "sys_update_set_list.do?sysparm_query=nameSTARTSWITH$0^ORDERBYDESCsys_created_on",
+        "hint": "local update sets",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "import": {
+        "url": "sys_remote_update_set_list.do?sysparm_query=sys_class_name=sys_remote_update_set^nameSTARTSWITH$0^ORDERBYDESCsys_created_on",
+        "hint": "imported update sets",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "email": {
+        "url": "sys_email_list.do?sysparm_query=sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()",
+        "hint": "system email",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
+    },
+    "cur": {
+        "url": "$table_list.do?sysparm_query=ORDERBYDESCsys_updated_on",
+        "hint": "current table",
+        "fields": "name,sys_updated_by",
         "order": 0,
         "overwriteurl": ""
     }
