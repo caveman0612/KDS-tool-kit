@@ -313,5 +313,12 @@
         "fields": "name,sys_updated_by",
         "order": 0,
         "overwriteurl": ""
+    },
+    "aclchecker": {
+        "url": "security_acl_detail_list.do?sysparm_query=aclrole_sys_user_role.nameSTARTSWITH$0^ORDERBYacl_name",
+        "hint": "security_acl table",
+        "fields": "",
+        "order": 0,
+        "overwriteurl": ""
     }
 }
