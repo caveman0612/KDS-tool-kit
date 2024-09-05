@@ -1,0 +1,5 @@
+new global.addToUpdateSetUtils().addToUpdateSet(current);
+
+//Get current URL for return
+var url = GlideSession.get().getStack().bottom();
+action.setRedirectURL(url);
