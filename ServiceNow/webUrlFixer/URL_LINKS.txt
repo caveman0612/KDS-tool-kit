@@ -1,9 +1,0 @@
-https://docs.servicenow.com/csh?topicname=t_CreateResourcePlanProjectTask.html&version=latest
-
-https://docs.servicenow.com/bundle/orlando-it-business-management/page/product/resource-management/task/t_CreateResourcePlanProjectTask.html
-
-r_UsingDemandManagement.html
-
-https://docs.servicenow.com/csh?topicname=
-
-&version=latest
