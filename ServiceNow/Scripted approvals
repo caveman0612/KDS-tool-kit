@@ -1,0 +1,105 @@
+https://www.servicenow.com/community/now-platform-blog/scripted-approvals-in-flow-designer-with-flow-variables/bc-p/2497050
+
+
+Why Scripted Approvals?
+Before you consider scripting your approval, please check out this article and Platform Academy recording about Approvals in Flow Designer. There's a good chance you don't actually need to script the approval but can just use the "Ask for Approval" Action with the low code conditions. Scripting should always be your last resort.
+
+Article: https://sn.works/CoE/FlowApproval
+
+Academy: https://sn.works/platformacademy/35 
+
+ 
+
+When creating Approvals for Tasks or specifically Catalog items, the provided options of requesting approval from a specific user or group is not always sufficient to cover your use case. Sometimes you just need that extra condition to make sure the correct people may approve or reject.
+
+In the "before Flow Designer times", this would mean Scripted Approvals. The Flow Action "Ask for Approval" also allows you to script approval rules, but it's not obvious at first glance which kind of input is needed to create the approval. The introduction of Flow Variables allows us to create approvals with an absolute minimum of scripting.
+
+ 
+
+Approval Syntax
+The Flow Action "Ask for Approval" will take a return value created from several components: a ruleset, a rule, the who, and sys_ids. The square brackets take a list of comma-separated sys_ids.
+
+Syntax
+ruleset+rule+who+[sys_id list]+(optional)ORruleset+rule+who+[sys_id list]
+Approval Rulesets
+Approves
+Rejects
+ApprovesRejects
+Rules
+Any = Anyone approves
+All = All users approve
+Res = All responded and anyone approves
+% = % of users approve
+# = number of users approve
+Who
+U = Users
+G = Groups
+ 
+Examples:
+Approval	Script
+Approved by any User	
+ApprovesAnyU[user_sys_id,user_sys_id]
+Approved by 50% of Group	
+Approves50%G[group_sys_id]
+Approved by 2 of Users or of Group	
+Approves2#U[user_sys_id,user_sys_id]G[group_sys_id]
+Rejected by all Users	
+RejectsAllU[user_sys_id,user_sys_id]
+Rejected by any user in Group	
+RejectsAnyG[group_sys_id,group_sys_id]
+Approved or Rejected by any User	
+ApprovesRejectsAnyU[user_sys_id]
+Approved by Group or Rejected by any User	
+ApprovesAnyG[group_sys_id]OrRejectsAnyU[user_sys_id]
+All responded and anyone approves in Group	
+ApprovesResG[group_sys_id]
+ 
+
+Flow Designer & Flow Variables
+Now, how do we query the right users/group and add it to the flow logic? We'll want the help of a flow variable to capture the user sys_ids.
+
+ 
+
+Scenario:
+For this example I created a Catalog item with a User variable. I want to look up the group members [sys_user_grmember] of a specific group and only add those that are assigned to the same company to the approvers in my flow. I'm using the demo data group "Network" which has 5 members from "ACME North America" and I added one more member (Aileen Mottern) who is assigned to ACME Italy. I expect my approval to only create entries for the 5 members from "ACME North America" if I choose Beth Anglin in my Catalog Item variable.
+
+find_real_file.png   find_real_file.png
+
+In Flow Designer, I've created a new flow with a "Service Catalog" trigger so I can assign this flow to my Catalog Item.
+
+This is the full flow and I'll take you through the individual steps. I haven't added further logic to go from the approval (just a log statement), because that will be dependent on your use case how you want to proceed based off of the approval status.
+
+find_real_file.png
+
+1) I've created a String flow variable to capture the user sys_ids.
+
+find_real_file.png
+
+find_real_file.png
+
+2) I'm getting the Catalog variable "account_holder" from my Catalog Item to have access to the user's company.
+
+find_real_file.png
+
+3) I use the "Look Up Records" action on the Group member [sys_user_grmember] table to find users in the Group "Network" who have the same Company entry as the user in my "account_holder" variable.
+
+find_real_file.png
+
+4) I added a for each logic and loop through the results from step 2.
+
+5) To create a list of results in my flow variable, I add the variable, a comma, and the user sys_id from the for each loop. This will work even if the string starts with a comma.
+
+find_real_file.png
+
+6) Finally, I'm adding the "Ask for Approval" step. To configure a scripted ruleset, click on the script field next to "Rules".
+
+find_real_file.png
+
+7) The script field needs you to return a string that is created based on the syntax above. In my case, the approval will be approved or rejected if any users from that string of users will approve or reject. I'm using my flow variable and concatenate the list of sys_ids into the return string.
+
+var approvers = fd_data.flow_var.users;
+return "ApprovesRejectsAnyU["+approvers+"]";
+find_real_file.png
+
+:smiling_face_with_sunglasses: Creating a new REQ from my catalog item will result in a RITM with my 5 expected approvers. The list does not include Aileen Mottern.
+
