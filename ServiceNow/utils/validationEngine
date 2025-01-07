@@ -1,0 +1,338 @@
+var cpic_validateInvestmentRules = Class.create();
+cpic_validateInvestmentRules.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    validateInvestmentAjax: function() {
+        var investmentId = this.getParameter('sysparm_investment_id');
+        var grInvestment = new GlideRecord('x_prop_cpic_agency_it_investment_portfolio_summary');
+        if (grInvestment.get(investmentId)) {
+            return JSON.stringify(this.validateInvestment(grInvestment));
+        } else {
+            return JSON.stringify({
+                error: "Investment not found"
+            });
+        }
+    },
+
+	    validateCioPmSection: function(grInvestment) {
+        var validationErrors = [];
+
+        var grRules = new GlideRecord('x_prop_cpic_investment_validation_rule');
+        grRules.addQuery('u_apply_to', "CIO Rating"); 
+        grRules.addQuery('u_active', true); 
+        grRules.orderBy('u_priority');
+        grRules.query();
+
+        while (grRules.next()) {
+            if (!this.checkCondition(grInvestment, grRules.u_condition.toString())) {
+                continue; // Skip this rule if the condition doesn't apply
+            }
+
+            var result = this.validateRule(grInvestment, grRules);
+                validationErrors.push(result);
+        }
+
+        return validationErrors;
+    },
+
+    validateInvestment: function(grInvestment) {
+        var validationErrors = [];
+
+        var grRules = new GlideRecord('x_prop_cpic_investment_validation_rule');
+        grRules.addQuery('u_active', true);
+        grRules.orderBy('u_priority');
+        grRules.query();
+
+        while (grRules.next()) {
+            if (!this.checkCondition(grInvestment, grRules.u_condition.toString())) {
+                continue; // Skip this rule if the condition doesn't apply
+            }
+
+            var result = this.validateRule(grInvestment, grRules);
+                validationErrors.push(result);
+        }
+
+        return validationErrors;
+    },
+
+    validateRule: function(grInvestment, grRule) {
+        var grSource = this.getSourceRecord(grInvestment, grRule.u_source_table);
+
+        var validationResult;
+        switch (grRule.u_type.toString()) {
+            case 'Record Exists':
+                validationResult = this.validateRecordExists(grInvestment, grRule);
+                break;
+            case 'Field Comparison':
+                validationResult = this.validateFieldComparison(grSource, grRule, grInvestment);
+                break;
+            case 'Pattern Matching':
+                validationResult = this.validatePatternMatching(grSource, grRule);
+                break;
+            case 'Range':
+                validationResult = this.validateRange(grSource, grRule);
+                break;
+            case 'Unique Check':
+                validationResult = this.validateUniqueCheck(grSource, grRule, grInvestment);
+                break;
+            case 'Advanced Script':
+                validationResult = this.validateAdvancedScript(grRule, grInvestment);
+                break;
+            case 'Aggregate':
+                validationResult = this.validateAggregate(grInvestment, grRule);
+                break;
+            default:
+                validationResult = {
+                    error: "Unknown validation type"
+                };
+        }
+            return this.formatValidationError(grInvestment, grRule, validationResult);
+    },
+
+    checkCondition: function(grInvestment, condition) {
+        if (!condition) return true;
+        var gr = new GlideRecord('x_prop_cpic_agency_it_investment_portfolio_summary');
+        gr.addQuery('sys_id', grInvestment.getUniqueValue());
+        gr.addEncodedQuery(condition);
+        gr.query();
+        return gr.hasNext();
+    },
+
+    getSourceRecord: function(grInvestment, tableName) {
+        if (tableName == 'x_prop_cpic_agency_it_investment_portfolio_summary') {
+            return grInvestment;
+        }
+
+        var grSource = new GlideRecord(tableName);
+        if (grSource.isValidField('uii')) {
+            grSource.addQuery('uii', grInvestment.getUniqueValue());
+        } else if (grSource.isValidField('investment')) {
+            grSource.addQuery('investment', grInvestment.getUniqueValue());
+        } else if (grSource.isValidField('parent_uii')) {
+            grSource.addQuery('parent_uii', grInvestment.getUniqueValue());
+        } else if (grSource.isValidField('u_uii')) {
+            grSource.addQuery('u_uii', grInvestment.getUniqueValue());
+        } else if (grSource.isValidField('u_record')) {
+            grSource.addQuery('u_record', grInvestment.getUniqueValue());
+        } else {
+            return null;
+        }
+        grSource.query();
+        if (grSource.next()) {
+            return grSource;
+        }
+        return null;
+    },
+
+    getTargetRecord: function(grInvestment, tableName) {
+        if (tableName == 'x_prop_cpic_agency_it_investment_portfolio_summary') {
+            return grInvestment;
+        }
+
+        var grTarget = new GlideRecord(tableName);
+        if (grTarget.isValidField('uii')) {
+            grTarget.addQuery('uii', grInvestment.getUniqueValue());
+        } else if (grTarget.isValidField('investment')) {
+            grTarget.addQuery('investment', grInvestment.getUniqueValue());
+        } else if (grTarget.isValidField('parent_uii')) {
+            grTarget.addQuery('parent_uii', grInvestment.getUniqueValue());
+        } else if (grTarget.isValidField('u_uii')) {
+            grTarget.addQuery('u_uii', grInvestment.getUniqueValue());
+        } else if (grTarget.isValidField('u_record')) {
+            grTarget.addQuery('u_record', grInvestment.getUniqueValue());
+        } else {
+            return null;
+        }
+        grTarget.query();
+        return grTarget.next() ? grTarget : null;
+    },
+
+    validateRecordExists: function(grInvestment, grRule) {
+        var gr = new GlideRecord(grRule.u_source_table.toString());
+        if (gr.isValidField('uii')) {
+            gr.addQuery('uii', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('investment')) {
+            gr.addQuery('investment', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('parent_uii')) {
+            gr.addQuery('parent_uii', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('u_uii')) {
+            gr.addQuery('u_uii', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('u_record')) {
+            gr.addQuery('u_record', grInvestment.getUniqueValue());
+        }
+        gr.addEncodedQuery(grRule.u_rule.toString());
+        gr.query();
+        return gr.hasNext() ? true : "No matching record exists";
+    },
+
+    validateFieldComparison: function(grSource, grRule, grInvestment) {
+        var sourceValue = grSource.getValue(grRule.u_source_field);
+        var targetValue;
+
+        if (grRule.u_comparison.endsWith('(field)')) {
+            var grTarget = this.getTargetRecord(grInvestment, grRule.u_target_table);
+            if (grTarget && grTarget.isValidField(grRule.u_target_field)) {
+                targetValue = grTarget.getValue(grRule.u_target_field);
+            } else {
+                return "Target field not found";
+            }
+        } else {
+            targetValue = grRule.u_target_value.toString();
+        }
+
+        switch (grRule.u_comparison.toString()) {
+            case 'Less than':
+            case 'Less than (field)':
+                return sourceValue > targetValue ? true : "Value is not less than target";
+            case 'Same as':
+            case 'Same as (field)':
+                return sourceValue == targetValue ? true : "Value is not the same as target";
+            case 'Greater than':
+            case 'Greater than (field)':
+                return sourceValue < targetValue ? true : "Value is not greater than target";
+            default:
+                return "Invalid comparison operator";
+        }
+    },
+
+    validatePatternMatching: function(grSource, grRule) {
+        var value = grSource.getValue(grRule.u_source_field);
+        var regex = new RegExp(grRule.u_regular_expression);
+        return regex.test(value) ? true : "Value does not match the required pattern";
+    },
+
+    validateRange: function(grSource, grRule) {
+        var value = parseFloat(grSource.getValue(grRule.u_source_field));
+        var min = parseFloat(grRule.u_minimum);
+        var max = parseFloat(grRule.u_maximum);
+        return (value >= min && value <= max) ? true : "Value is not within the specified range";
+    },
+
+    validateUniqueCheck: function(grSource, grRule, grInvestment) {
+        var gr = new GlideRecord(grRule.u_source_table);
+        gr.addQuery(grRule.u_source_field, grSource.getValue(grRule.u_source_field));
+        gr.addQuery('sys_id', '!=', grSource.getUniqueValue());
+
+        if (gr.isValidField('uii')) {
+            gr.addQuery('uii', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('investment')) {
+            gr.addQuery('investment', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('parent_uii')) {
+            gr.addQuery('parent_uii', grInvestment.getUniqueValue());
+        }else if (gr.isValidField('u_uii')) {
+            gr.addQuery('u_uii', grInvestment.getUniqueValue());
+        }else if (gr.isValidField('u_record')) {
+            gr.addQuery('u_record', grInvestment.getUniqueValue());
+        }
+
+        gr.query();
+        return !gr.hasNext() ? true : "Value is not unique";
+    },
+
+    validateAdvancedScript: function(grRule, grInvestment) {
+        var script = grRule.u_script.toString();
+        var evaluator = new GlideScopedEvaluator();
+        var result = evaluator.evaluateScript(grRule, "u_script", {"current": grInvestment});
+        return result === true ? true : (result || "Advanced script validation failed");
+    },
+
+    validateAggregate: function(grInvestment, grRule) {
+        var aggregateValue = this.calculateAggregate(grInvestment, grRule);
+        var comparisonValue = parseFloat(grRule.u_target_value);
+
+        switch (grRule.u_aggregate_comparison.toString()) {
+            case 'Less than':
+                return aggregateValue < comparisonValue ? true : "Aggregate value is not less than target";
+            case 'Same as':
+                return aggregateValue == comparisonValue ? true : "Aggregate value is not the same as target";
+            case 'Greater than':
+                return aggregateValue > comparisonValue ? true : "Aggregate value is not greater than target";
+            case 'Range':
+                var min = parseFloat(grRule.u_minimum);
+                var max = parseFloat(grRule.u_maximum);
+                return (aggregateValue >= min && aggregateValue <= max) ? true : "Aggregate value is not within the specified range";
+            default:
+                return "Invalid aggregate comparison operator";
+        }
+    },
+
+    calculateAggregate: function(grInvestment, grRule) {
+        var gr = new GlideAggregate(grRule.u_source_table);
+        gr.addAggregate('SUM', grRule.u_source_field);
+        if (gr.isValidField('uii')) {
+            gr.addQuery('uii', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('investment')) {
+            gr.addQuery('investment', grInvestment.getUniqueValue());
+        } else if (gr.isValidField('parent_uii')) {
+            gr.addQuery('parent_uii', grInvestment.getUniqueValue());
+        }else if (gr.isValidField('u_uii')) {
+            gr.addQuery('u_uii', grInvestment.getUniqueValue());
+        }else if (gr.isValidField('u_record')) {
+            gr.addQuery('u_record', grInvestment.getUniqueValue());
+        }
+        gr.query();
+        if (gr.next()) {
+            return parseFloat(gr.getAggregate('SUM', grRule.u_source_field)) || 0;
+        }
+        return 0;
+    },
+
+    formatValidationError: function(grRecord, grRule, errorMessage) {
+        return {
+            'table': grRecord.getTableName(),
+            'recordId': grRecord.getUniqueValue(),
+            'recordDisplay': grRecord.getDisplayValue(),
+            'ruleId': grRule.getUniqueValue(),
+            'ruleDisplay': grRule.getDisplayValue(),
+            'ruleDescription': grRule.getValue('u_description'),
+            'priority': grRule.getValue('u_priority'),
+            'priorityLabel': grRule.getDisplayValue('u_priority'),
+            'message': errorMessage == true ? "" : grRule.getValue('u_message') || errorMessage,
+			"error" : errorMessage == true ? false : true
+        };
+    },
+
+    generateValidationResultsHTML: function(validationResults) {
+        var priorityMap = {
+            1: {
+                name: 'Required',
+                class: 'table-danger'
+            },
+            2: {
+                name: 'Expected',
+                class: 'table-warning'
+            },
+            3: {
+                name: 'Optional',
+                class: 'table-info'
+            },
+            4: {
+                name: 'N/A',
+                class: 'table-secondary'
+            }
+        };
+
+        var htmlResults = '<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">';
+
+        htmlResults += '<table class="table">';
+        htmlResults += '<thead><tr><th>Priority</th><th>Rule</th><th>Result</th><th>Message</th></tr></thead><tbody>';
+        validationResults.forEach(function(result) {
+            var priority = result.priority || 4; // Default to N/A if priority is not set
+            var priorityInfo = priorityMap[priority];
+
+                htmlResults += '<tr>';
+                htmlResults += '<td>' + priorityInfo.name + '</td>';
+                htmlResults += '<td>' + result.ruleDisplay + '</td>';
+                htmlResults += '<td>' + (result.error ? 'Failed' : 'Passed') + '</td>';
+                htmlResults += '<td>' + (result.message || '') + '</td>';
+                htmlResults += '</tr>';
+
+
+        });
+        htmlResults += '</tbody></table>';
+
+        htmlResults += '</div>';
+        return htmlResults;
+    },
+
+    type: 'cpic_validateInvestmentRules'
+});
